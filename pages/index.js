@@ -1,64 +1,65 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Miku UI | Component Library</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <Image className={styles.favicon} src='/favicon.ico' alt='Miku UI' height='120' width='120' />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <span style={{color: '#0070f3'}}>
+            Miku UI
+          </span>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Miku UI is a tiny (5.59 KB) CSS library that will give your development a jumpstart with ready-made components and styles.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/favicon.ico" className={styles.card}>
+            <h3>Download &rarr;</h3>
+            <p>Download the module and start using instantly</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/docs/get-started" >
+            <a className={styles.card}>
+              <h3>Documentation &rarr;</h3>
+              <p>Find in-depth information about Miku UI's features</p>
+            </a>
+          </Link>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer className={styles.footer, 'mb-2'}>
+        <div>
+          © 2021 Miku UI, Inc. All rights reserved.
+        </div>
+        <div className='text-center'>
+          <Link href='https://github.com/ashwinkhode' passHref>
+            <a target='_blank'>
+              Github
+              </a>
+          </Link>
+           -
+          <Link href='https://linkedin.com/in/ashwin-khode' passHref>
+            <a target='_blank'>
+              Linkedin
+              </a>
+          </Link>
+           -
+          <Link href='https://twitter.com/ashwin4real' passHref>
+            <a target='_blank'>
+              Twitter
+              </a>
+          </Link>
+        </div>
       </footer>
     </div>
   )
