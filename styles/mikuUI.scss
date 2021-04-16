@@ -1,0 +1,329 @@
+// To remove default font, remove this line
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  // This is for putting it as 16px
+  font-size: 100%;
+  //   You can swap this line for your custom font
+  font-family: "Roboto", "Quicksand", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+:root {
+  //Base Colors
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --red: #e53e3e;
+  --yellow: #fde24f;
+  --green: #38a169;
+  --skyblue: #3182ce;
+  --darkBlue: #00214d;
+  --orange: #dd6b20;
+}
+a {
+  text-decoration: none;
+}
+li,
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+/* 1. Typography */
+.heading-xl {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+.heading-lg {
+  font-size: 2.441rem;
+}
+
+.heading-md {
+  font-size: 1.953rem;
+}
+
+.heading-sm {
+  font-size: 1.563rem;
+}
+
+.heading-xs {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+.blog {
+  margin: 0 auto;
+  max-width: 65ch;
+}
+/*2. Avatar */
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-sm {
+  width: 3rem;
+  height: 3rem;
+}
+.avatar-md {
+  width: 4rem;
+  height: 4rem;
+}
+.avatar-lg {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.avatar-xl {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+/*3. Alerts*/
+.alert {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+}
+.alert-solid-success {
+  color: white;
+  background-color: var(--green);
+}
+.alert-solid-error {
+  color: white;
+  background-color: var(--red);
+}
+.alert-solid-warning {
+  color: white;
+  background-color: var(--yellow);
+}
+.alert-solid-info {
+  color: white;
+  background-color: var(--skyblue);
+}
+.alert-outline-success {
+  border: 2px solid var(--green);
+}
+.alert-outline-error {
+  border: 2px solid var(--red);
+}
+.alert-outline-warning {
+  border: 2px solid var(--yellow);
+}
+.alert-outline-info {
+  border: 2px solid var(--skyblue);
+}
+/* 4. Badges*/
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-success {
+  color: white;
+  background-color: var(--green);
+}
+.badge-error {
+  color: white;
+  background-color: var(--red);
+}
+.badge-info {
+  color: white;
+  background-color: var(--skyblue);
+}
+.badge-warning {
+  color: white;
+  background-color: var(--orange);
+}
+
+.badge-outline-success {
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+.badge-outline-error {
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+.badge-outline-info {
+  color: var(--skyblue);
+  border: 2px solid var(--skyblue);
+}
+.badge-outline-warning {
+  color: var(--orange);
+  border: 2px solid var(--orange);
+}
+/*5. Buttons*/
+.btn {
+  background-color: #fd4d4d;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.btn-outline {
+  background-color: unset;
+  border: 2px solid #fd4d4d;
+  color: black;
+}
+.btn-success {
+  background-color: #38a169;
+}
+.btn-sm {
+  padding: 0.5rem 1rem;
+}
+.btn-r {
+  padding: 0.7rem 1.4rem;
+}
+.btn-lg {
+  padding: 0.9rem 1.8rem;
+}
+.btn-xl {
+  padding: 1rem 2rem;
+}
+/*Cards*/
+.card {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.card-img-side {
+  max-width: 500px;
+  display: flex;
+  img {
+    object-fit: cover;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.card-body {
+  padding: 0.9rem;
+  p {
+    font-weight: normal;
+  }
+  button {
+    margin-top: 0.5rem;
+    color: white;
+    background-color: #319795;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+  }
+}
+
+/*Images*/
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*Inputs*/
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  outline-color: #65a1db;
+  outline-width: 5px;
+}
+/*Lists*/
+.list {
+  padding: 1rem 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.list-striped {
+  padding: 1rem 0;
+  li {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  li:nth-child(2n) {
+    background-color: #dee3ea;
+  }
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list-item {
+  padding: 0.7rem 0;
+}
+.list-item:not(:last-child) {
+  border-bottom: 1px solid #dee3ea;
+}
+/*Modal*/
+.modal {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.modal-body {
+  margin-top: 1rem;
+}
+.modal-footer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  button {
+    padding: 0.2rem 0.6rem;
+    margin: 0 0.4rem;
+  }
+}
+
+/*Navigation (Broken and non repsonsive)*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  margin: 0 0.8rem;
+}
+
+/*Ratings*/
+.rating-container {
+  display: flex;
+}
