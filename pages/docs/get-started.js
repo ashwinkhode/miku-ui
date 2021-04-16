@@ -35,21 +35,21 @@ const GetStarted = () => {
           </div>
           <div className="mb-4 flex sm:mt-0">
             <a
-              href="/dist/css/dogeui.css"
+              href="/miku-ui.css"
               type="button"
-              download="dogeui.css"
+              download="miku-ui.css"
               className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Download (7.26 KB)
+              Download (5.49 KB)
             </a>
             <a
-              href="/dist/css/dogeui.min.css"
+              href="/miku-ui.min.css"
               type="button"
-              download="dogeui.min.css"
+              download="miku-ui.min.css"
               className="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
             >
               <HiDownload className="text-lg mr-2" />
-              Download (minified) (5.59 KB)
+              Download (minified) (4.64 KB)
             </a>
           </div>
         </div>
@@ -61,7 +61,7 @@ const GetStarted = () => {
                 React/NextJS Project
             </h3>
               <p className="mt-2 max-w-4xl text-sm text-gray-500">
-                Import Doge-UI in your <code>index.js (React)</code> or{" "}
+                Import Miku-UI in your <code>index.js (React)</code> or{" "}
                 <code>_app.js (NextJS)</code> file as follows
             </p>
             </div>
@@ -83,7 +83,7 @@ const GetStarted = () => {
                 Colors and Fonts
             </h3>
               <p className="mt-2 max-w-4xl text-sm text-gray-500">
-                Doge UI recommends Inter{" "}
+                Miku UI recommends Inter{" "}
                 <a
                   target="_blank noreferrer"
                   href="https://fonts.google.com/specimen/Inter"

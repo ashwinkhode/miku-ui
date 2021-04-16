@@ -24,7 +24,7 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/favicon.ico" className={styles.card}>
+          <a href="/miku-ui.min.css" className={styles.card}>
             <h3>Download &rarr;</h3>
             <p>Download the module and start using instantly</p>
           </a>
