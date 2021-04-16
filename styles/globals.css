@@ -270,6 +270,7 @@ body {
 }
  .list-striped li:nth-child(2n) {
 	 background-color: #666;
+	 color: white;
 }
  .list-container {
 	 display: flex;
