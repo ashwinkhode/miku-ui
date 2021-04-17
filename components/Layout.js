@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {useRouter} from 'next/router'
 import clsx from 'clsx'
 import {AiFillGithub, AiOutlineMenu} from 'react-icons/ai'
+import SEO from './SEO'
 
 const navLinks = [
   {
@@ -65,6 +66,7 @@ const Layout = ({children}) => {
   const [menuToggle, setMenuToggle] = useState(false)
   return (
     <div className='w-full h-full flex flex-col lg:flex-row'>
+      <SEO />
       <div className='lg:hidden h-[10vh] flex flex-row justify-between items-center overflow-hidden z-20'>
         <button
           className='p-2'

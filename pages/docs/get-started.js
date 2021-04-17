@@ -29,7 +29,7 @@ const GetStarted = () => {
                 type="text"
                 className="shadow-sm py-2 px-2 border bg-white mt-3 border-gray-200 font-mono rounded-md"
                 readOnly
-                value={`<link href="path/to/mikuUI.css" rel="stylesheet" />`}
+                value={`<link href="path/to/miku-ui.css" rel="stylesheet" />`}
               />
             </div>
           </div>
@@ -99,8 +99,8 @@ const GetStarted = () => {
               <p>Gray</p>
               <div className="flex space-x-2">
                 <div className="px-8 py-6 rounded-md bg-gray-100"></div>
-                <div className="px-8 py-6 rounded-md bg-gray-200"></div>
                 <div className="px-8 py-6 rounded-md bg-gray-300"></div>
+                <div className="px-8 py-6 rounded-md bg-gray-500"></div>
                 <div className="px-8 py-6 rounded-md bg-gray-600"></div>
                 <div className="px-8 py-6 rounded-md bg-gray-700"></div>
                 <div className="px-8 py-6 rounded-md bg-gray-800"></div>
